@@ -1,10 +1,9 @@
 # pysonde
-DIAS Ionogram Data Fetcher + Ham Band Advisor
-**pysonde** fetches real-time ionospheric data from the DIAS Ionostream API and provides amateur radio band recommendations based on MUF, foF2 (NVIS), and fmin values. Perfect for DX planning and propagation forecasting!
+Ionogram Data Fetcher + Ham Band Advisor
+**pysonde** fetches real-time ionospheric data from the DIAS Ionostream API and provides amateur radio band recommendations based on MUF, foF2 (NVIS), and fmin values for DX planning and propagation forecasting!
 
 ## How It Works
 - Queries DIAS Ionostream API for ionogram scaled auto-observations (SAO)
-- Filters valid data (ignores 9999.0, 0.0 bad values)
 - Finds latest valid measurement with good MUF+foF2
 - Calculates band status:
 
@@ -48,10 +47,7 @@ python3 pysonde.py
 - Nighttime - some parameters unavailable
 
 ## Acknowledgements
-**Heartfelt thanks to the National Observatory of Athens** for their commitment to open science and public access to space weather data that keeps the ham radio world connected!
-**pysonde** gratefully uses real-time ionospheric data from **DIAS (Digital Ionogram Archive Service)**, operated by the **National Observatory of Athens (NOA)**.
-
-The DIAS team has created a pan-European network of digital ionosondes delivering real-time ionospheric specification essential for amateur radio propagation forecasting. By making this critical HF data freely accessible to researchers, operators, and radio enthusiasts worldwide, they've empowered hams everywhere to plan DX windows and emergency communications with unprecedented accuracy.
+**Heartfelt thanks to the National Observatory of Athens** for their commitment to open science and public access to space weather data. pysonde uses real-time ionospheric data from **DIAS (Digital Ionogram Archive Service)**. The DIAS team has created a pan-European network of digital ionosondes delivering real-time ionospheric specification essential to the amateur radio service for propagation forecasting. By making this critical HF data freely accessible to researchers, operators, and radio enthusiasts worldwide can plan DX windows and emergency communications with unprecedented accuracy.
 
 **DISCLAIMER:** 
 

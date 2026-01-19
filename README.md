@@ -1,5 +1,5 @@
 # pysonde
-Fetches real-time ionospheric data from the DIAS Ionostream API and provides amateur radio band recommendations based on MUF (Maximu Usable Frequency), foF2 (Critical frequency-NVIS), and fmin values for DX planning and propagation forecasting!
+Fetches real-time ionospheric data from the DIAS Ionostream API and provides amateur radio band recommendations based on MUF (Maximum Usable Frequency), foF2 (Critical frequency-NVIS), and fmin values for DX planning and propagation forecasting!
 
 ## How It Works
 - Queries DIAS Ionostream API for ionogram scaled auto-observations (SAO)

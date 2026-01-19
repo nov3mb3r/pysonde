@@ -1,7 +1,5 @@
 # pysonde
-Ionogram Data Fetcher + Ham Band Advisor
-
-**pysonde** fetches real-time ionospheric data from the DIAS Ionostream API and provides amateur radio band recommendations based on MUF, foF2 (NVIS), and fmin values for DX planning and propagation forecasting!
+Fetches real-time ionospheric data from the DIAS Ionostream API and provides amateur radio band recommendations based on MUF (Maximu Usable Frequency), foF2 (Critical frequency-NVIS), and fmin values for DX planning and propagation forecasting!
 
 ## How It Works
 - Queries DIAS Ionostream API for ionogram scaled auto-observations (SAO)
@@ -41,7 +39,7 @@ python3 pysonde.py -lb 42m       # Closest to 42 minutes ago
 python3 pysonde.py -lb 6h        # Closest to 6 hours ago
 ```
 
-# Troubleshooting
+## Troubleshooting
 "No data for station":
 - Try larger lookback: ./pysonde.py -lb 1d
 - Try different station: ./pysonde.py -s EB040
@@ -50,7 +48,7 @@ python3 pysonde.py -lb 6h        # Closest to 6 hours ago
 - Ionosonde temporarily offline
 - Nighttime - some parameters unavailable
 
-## Acknowledgements
+# Acknowledgements
 **Heartfelt thanks to the National Observatory of Athens** for their commitment to open science and public access to space weather data. pysonde uses real-time ionospheric data from **DIAS (Digital Ionogram Archive Service)**. The DIAS team has created a pan-European network of digital ionosondes delivering real-time ionospheric specification essential to the amateur radio service for propagation forecasting. By making this critical HF data freely accessible to researchers, operators, and radio enthusiasts worldwide can plan DX windows and emergency communications with unprecedented accuracy.
 
 **DISCLAIMER:** 
